@@ -1,3 +1,2 @@
 #!/bin/bash
-# Fixed permissions
 ls -l
