@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n filename
+head -n 6 "$1" | tail -n 2 | head -n 1
