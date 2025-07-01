@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n 1 iacta >> iacta
+grep "The phrase has been adopted in Italian" iacta >> iacta
