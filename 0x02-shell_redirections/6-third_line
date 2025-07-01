@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -m 3 -e "With this step" -1 "The phrase has been" -e "49 BC" iacta
+grep -E "With this step|The phrase has been|49 BC" iacta
