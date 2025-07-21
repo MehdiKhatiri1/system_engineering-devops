@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
 # forcefully kill the 7-highlander process using SIGKILL (signal 9)
 
-pid=$(pgrep -f "7-highlander")
-if [ -n "$pid" ]; then
-kill -9 "$pid"
-else
-exit 1
-fi
+pgrep -f "7-highlander" | xargs -r kill -9
