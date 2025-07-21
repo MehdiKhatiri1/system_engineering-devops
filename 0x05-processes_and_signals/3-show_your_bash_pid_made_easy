@@ -2,4 +2,4 @@
 # displays the PID and process name for processes containing "bash"
 # shellcheck disable=SC2009
 
-pgrep -a bash | awk '{print $1, $2}'
+pgrep -l bash
