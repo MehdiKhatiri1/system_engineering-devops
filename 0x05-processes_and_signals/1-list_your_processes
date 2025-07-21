@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 # list all currently running processes
 
-printf "USER   \n"
-ps -eo user=,cmd= | awk '{print $1, $2 "  "}'
+echo "=== All Running Processes (User-Oriented View) ==="
+ps -eo user,pid,ppid,%cpu,%mem,tty,cmd --sort=ppid | column -t
+
+echo ""
+echo "=== Process Hierarchy (Parent-Child Relationships) ==="
+pstree -pau
